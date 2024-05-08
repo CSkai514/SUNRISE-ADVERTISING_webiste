@@ -168,7 +168,7 @@ section {
   right: 15px;
   bottom: -15px;
   z-index: 99999;
-  background: var(--color-secondary);
+  background: #dfa44a;
   width: 44px;
   height: 44px;
   border-radius: 50px;
@@ -182,7 +182,7 @@ section {
 }
 
 .scroll-top:hover {
-  background: rgba(248, 90, 64, 0.8);
+  background: #000000a8;
   color: #fff;
 }
 
@@ -381,7 +381,7 @@ section {
     height: 2px;
     bottom: -6px;
     left: 0;
-    background-color: var(--color-secondary);
+    background-color: #dfa44a;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -436,7 +436,7 @@ section {
   .navbar .dropdown ul a:hover,
   .navbar .dropdown ul .active:hover,
   .navbar .dropdown ul li:hover>a {
-    color: var(--color-secondary);
+    color: #dfa44a;
   }
 
   .navbar .dropdown:hover>ul {
@@ -1850,7 +1850,8 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(0, 131, 116, 0.8);
+  background: rgba(0, 0, 0);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
 }
 
 @keyframes animate-loading {
@@ -1963,6 +1964,7 @@ section {
   position: relative;
   overflow: hidden;
   background: #3b3b3b;
+  border: 3px solid #3b3b3b;
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
