@@ -610,7 +610,7 @@
           <div class="swiper-scrollbar"></div>
         </div> -->
         <div class="d-flex justify-content-center justify-content-lg-center">
-          <a href="#" class="btn-get-started seeMore">See more</a>           
+          <a href="#" onclick="noSeeMorefunction()" class="btn-get-started seeMore">See more</a>           
         </div>
       </div>
     </section><!-- End Portfolio Section -->
@@ -810,6 +810,14 @@
     function noservicefunction(){
       Swal.fire({
         title: "Send message",
+        text: "Temprorary Not avaliable",
+        icon: "warning"
+      });
+
+    }
+    function noSeeMorefunction(){
+      Swal.fire({
+        title: "See More",
         text: "Temprorary Not avaliable",
         icon: "warning"
       });
