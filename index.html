@@ -30,6 +30,8 @@
 />
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
@@ -682,7 +684,7 @@
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" onclick="noservicefunction()">Send Message</button></div>
             </form>
           </div><!-- End Contact Form -->
 
@@ -805,6 +807,16 @@
         });
       }
     });
+    function noservicefunction(){
+      Swal.fire({
+        title: "Send message",
+        text: "Temprorary Not avaliable",
+        icon: "warning"
+      });
+
+    }
+    
+
 //     const swiper = new Swiper('.swiper', {
 
 //   effect: 'cards',
