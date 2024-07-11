@@ -61,6 +61,7 @@
     }
     .portfolio-flters{
         font-size: 18px;
+
       }
       .portfolio .portfolio-flters li{
         padding-bottom: 20px;
@@ -69,12 +70,14 @@
     display: flex;
     justify-content: space-between;
     } */
-    .portfolio .portfolio-wrap {
+    /* .portfolio .portfolio-wrap {
       display: flex;
     justify-content: center;
-    }
+    } */
     .portfolio-wrap img {
       object-fit: cover;
+      aspect-ratio: 5/3;
+      max-height: 400px;
     }
 
     .portfolio-container{
@@ -91,7 +94,9 @@
         padding-top: 20px;
       }
       .portfolio-flters{
-        font-size: 25px;
+        font-size: 20px;
+        overflow: scroll;
+        white-space: nowrap;
       }
       .portfolio .portfolio-flters li{
         padding-bottom: 5px;
@@ -423,17 +428,22 @@
                <li data-filter=".filter-ofice_signage">Office Signage</li>
                <li data-filter=".filter-glass_sticker">Glass Sticker</li>
                <li data-filter=".filter-app" class="filter-active">Vehicles Advertisement</li>
-               <li data-filter=".filter-TNB_signage_backdrop">TNB signage backdrop</li> 
-
-
-              
+               <li data-filter=".filter-TNB_signage_backdrop">TNB signage backdrop</li>    
             </ul>
           </div>
-
+          <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 0px; top: 0px;">
+            <div class="portfolio-content h-100">
+              <a href="assets/img/portfolio/app-1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt=""></a>
+              <div class="portfolio-info">
+                <h4><a href="portfolio-details.html" title="More Details">App 1</a></h4>
+                <p>Lorem ipsum, dolor sit amet consectetur</p>
+              </div>
+            </div>
+          </div> -->
           <div class="row gx-8 portfolio-container">
 
             <div class="col-xl-6 col-md-6 portfolio-item filter-app">
-              <div class="portfolio-wrap">
+              <div class="portfolio-wrap h-100">
                 <a href="assets/img/works/Vehicle_Advertising/Vehicle Advertising_1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Vehicle_Advertising/Vehicle Advertising_1.jpg" class="img-fluid" alt="" style="aspect-ratio: 3/2;"></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Vehicles Advertisement</a></h4>
@@ -481,7 +491,7 @@
               </div>
             </div>
 
-            <div class="col-xl-4 col-md-6 portfolio-item filter-Billboard">
+            <div class="col-xl-6 col-md-6 portfolio-item filter-Billboard">
               <div class="portfolio-wrap">
                 <a href="assets/img/works/billboard/billboard_3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/billboard/billboard_3.jpg" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
@@ -527,7 +537,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-xl-6 col-md-6  portfolio-item filter-TNB_signage_backdrop mx-auto">
+            <div class="col-xl-6 col-md-6  portfolio-item filter-TNB_signage_backdrop mx-auto" id="tnb_card" >
               <div class="portfolio-wrap">
                 <a href="assets/img/works/TNB_signage_backdrop/TNB_signage_backdrop_1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/TNB_signage_backdrop/TNB_signage_backdrop_1.jpg" class="img-fluid" alt="" ></a>
                 <div class="portfolio-info">
