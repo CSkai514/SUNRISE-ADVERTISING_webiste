@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SUNRISE ADVERTISING 旭陽廣告牌業</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Impact
+  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+  * Updated: Apr 4 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .seeMore{
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 50px;
+    transition: 0.3s;
+    color: #000000;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    border: 2px solid #dfa44a;
+    margin-top: 125px;
+    }
+    .portfolio-flters{
+        font-size: 18px;
+    }
+      .portfolio .portfolio-flters li{
+        padding-bottom: 20px;
+      }
+    .portfolio-wrap img {
+      object-fit: cover;
+      aspect-ratio: 5/3;
+      max-height: 400px;
+    }
+
+    .portfolio-container{
+      
+      padding-bottom: 100px;
+    }
+    .portfolio-item{
+        padding-bottom: 120px;
+    }
+    @media (max-width:1024px){
+      .portfolio-container{
+        margin-left: 0px; 
+      }
+      .seeMore{
+        margin-top: 195px;
+      }
+      .portfolio-wrap{
+        padding-top: 20px;
+      }
+      .portfolio-flters{
+        font-size: 20px;
+        overflow: scroll;
+        white-space: nowrap;
+      }
+      .portfolio .portfolio-flters li{
+        padding-bottom: 5px;
+      }
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-height: 400px;
+      object-fit: cover;
+    }
+
+  </style>
+</head>
+
+<body>
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>SUNRISE ADVERTISING</h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#services">Our Services</a></li>
+          <!-- <li><a href="#portfolio">Our Portfolio</a></li> -->
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio sections-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Our Portfolio</h2>
+        </div>
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+
+          <div>
+            <ul class="portfolio-flters">
+               
+               <li data-filter=".filter-3DBoxUpNon-LightedSign">3D Box Up Non-Lighted Sign</li>              
+               <li data-filter=".filter-3DLEDFrontLitSignboard">3D LED Front Lit Signboard</li>
+               <li data-filter=".filter-3D_Box_Up_LED_Back_Lit">3D Box Up LED Back Lit</li>
+               <li data-filter=".filter-Billboard">Billboard</li>
+               <li data-filter=".filter-road_sign">Road Sign</li>
+               <li data-filter=".filter-ofice_signage">Office Signage</li>
+               <li data-filter=".filter-glass_sticker">Glass Sticker</li>
+               <li data-filter=".filter-app" class="filter-active">Vehicles Advertisement</li>
+               <li data-filter=".filter-TNB_signage_backdrop">TNB signage backdrop</li>  
+               <!-- <li data-filter="*" class="filter-active"><b>All</b></li>   -->
+            </ul>
+            <p style="text-align: center; color: rgb(173, 173, 173); font-size: 12px;">Click the image to expand </p>
+          </div>
+          <div class="row gx-8 portfolio-container">
+            <div class="col-xl-12 col-md-6 portfolio-item filter-app">
+                <div class="portfolio-wrap h-100">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Vehicle_Advertising/Vehicle Advertising_1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Vehicle_Advertising/Vehicle Advertising_1.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Vehicle_Advertising/Vehicle Advertising_2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Vehicle_Advertising/Vehicle Advertising_2.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Vehicle_Advertising/Vehicle Advertising_3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Vehicle_Advertising/Vehicle Advertising_3.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Vehicle_Advertising/Vehicle Advertising_4.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Vehicle_Advertising/Vehicle_Advertising_4.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Vehicle_Advertising/Vehicle Advertising_5.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Vehicle_Advertising/Vehicle_Advertising_5.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Vehicle_Advertising/Vehicle Advertising_6.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Vehicle_Advertising/Vehicle_Advertising_6.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Vehicle_Advertising/Vehicle Advertising_7.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Vehicle_Advertising/Vehicle_Advertising_7.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Vehicle_Advertising/Vehicle Advertising_8.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Vehicle_Advertising/Vehicle_Advertising_8.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Vehicle_Advertising/Vehicle Advertising_9.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Vehicle_Advertising/Vehicle_Advertising_9.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Vehicle_Advertising/Vehicle Advertising_10.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Vehicle_Advertising/Vehicle_Advertising_10.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                        </div>
+                        
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-md-6 portfolio-item filter-3DBoxUpNon-LightedSign">
+                <div class="portfolio-wrap h-100">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_Box_Up_Non-Lighted_Sign/3D_Box_Up_Non-Lighted_Sign_2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_Box_Up_Non-Lighted_Sign/3D_Box_Up_Non-Lighted_Sign_2.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_Box_Up_Non-Lighted_Sign/3D_Box_Up_Non-Lighted_Sign_3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_Box_Up_Non-Lighted_Sign/3D_Box_Up_Non-Lighted_Sign_3.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_Box_Up_Non-Lighted_Sign/3D_Box_Up_Non-Lighted_Sign_1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_Box_Up_Non-Lighted_Sign/3D_Box_Up_Non-Lighted_Sign_1.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_Box_Up_Non-Lighted_Sign/3D_Box_Up_Non-Lighted_Sign_4.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_Box_Up_Non-Lighted_Sign/3D_Box_Up_Non-Lighted_Sign_4.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_Box_Up_Non-Lighted_Sign/3D_Box_Up_Non-Lighted_Sign_5.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_Box_Up_Non-Lighted_Sign/3D_Box_Up_Non-Lighted_Sign_5.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                        </div>
+                        
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-md-6 portfolio-item filter-Billboard">
+                <div class="portfolio-wrap">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/billboard/billboard_1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/billboard/billboard_1.jpg"  loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/billboard/billboard_2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/billboard/billboard_2.jpg" loading="lazy"  class="img-fluid" alt="" style="max-height: 363px;"></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/billboard/billboard_3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/billboard/billboard_3.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                        </div>
+                        
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-md-6 portfolio-item filter-3DLEDFrontLitSignboard">
+                <div class="portfolio-wrap">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_1.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_2.jpg" loading="lazy" class="img-fluid" alt=""></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_3.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_4.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_4.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_5.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_5.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_6.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_6.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_7.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_7.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_8.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_8.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_9.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_LED_Front_Lit _Signboard/3D_LED_Front_Lit _Signboard_9.jpg" loading="lazy"  class="img-fluid" alt=""></a>
+                          </div>
+                        </div>
+                        
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-md-6 portfolio-item filter-3D_Box_Up_LED_Back_Lit">
+                <div class="portfolio-wrap">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_Box_Up_LED _Back_Lit/3D_Box_Up_LED _Back_Lit_1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_Box_Up_LED _Back_Lit/3D_Box_Up_LED _Back_Lit_1.jpg" class="img-fluid" alt="" loading="lazy"  style="scale: 1.45;"></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/3D_Box_Up_LED _Back_Lit/3D_Box_Up_LED _Back_Lit_2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/3D_Box_Up_LED _Back_Lit/3D_Box_Up_LED _Back_Lit_2.jpg" loading="lazy" class="img-fluid" alt=""></a>
+                          </div>
+                        </div>
+                        
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-md-6 portfolio-item filter-TNB_signage_backdrop">
+                <div class="portfolio-wrap">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/TNB_signage_backdrop/TNB_signage_backdrop_1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/TNB_signage_backdrop/TNB_signage_backdrop_1.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                        </div>
+                        
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-md-6 portfolio-item filter-road_sign">
+                <div class="portfolio-wrap">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Road_sign/Road_sign_1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Road_sign/Road_sign_1.jpg" loading="lazy" class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Road_sign/Road_sign_2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Road_sign/Road_sign_2.jpg" loading="lazy" class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Road_sign/Road_sign_3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Road_sign/Road_sign_3.jpg" loading="lazy" class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Road_sign/Road_sign_4.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Road_sign/Road_sign_4.jpg" loading="lazy" class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Road_sign/Road_sign_5.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Road_sign/Road_sign_5.jpg" loading="lazy" class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/Road_sign/Road_sign_6.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/Road_sign/Road_sign_6.jpg" loading="lazy" class="img-fluid" alt="" ></a>
+                          </div>
+                        </div>
+                        
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-md-6 portfolio-item filter-ofice_signage">
+                <div class="portfolio-wrap">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_1.jpg" loading="lazy"  class="img-fluid" alt="" style="max-height: 363px;"></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_2.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_3.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_4.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_4.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_5.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_5.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_6.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_6.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_7.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_7.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_8.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_8.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_9.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_9.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_10.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_10.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_11.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_11.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_12.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_12.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_13.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_13.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_14.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_14.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_15.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_15.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_16.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_16.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/office_signage/office_signage_17.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/office_signage/office_signage_17.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                        </div>
+                        
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+              </div>
+              <div class="col-xl-12 col-md-6 portfolio-item filter-glass_sticker">
+                <div class="portfolio-wrap">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/glass_sticker/glass_sticker_1.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/glass_sticker/glass_sticker_1.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/glass_sticker/glass_sticker_2.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/glass_sticker/glass_sticker_2.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/glass_sticker/glass_sticker_3.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/glass_sticker/glass_sticker_3.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/glass_sticker/glass_sticker_4.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/glass_sticker/glass_sticker_4.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="assets/img/works/glass_sticker/glass_sticker_5.jpg" data-gallery="portfolio-gallery-app" class="glightbox"><img src="assets/img/works/glass_sticker/glass_sticker_5.jpg" loading="lazy"  class="img-fluid" alt="" ></a>
+                          </div>
+                        </div>
+                        
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                </div>
+              </div>
+       
+        </div>
+
+        <div class="d-flex justify-content-center justify-content-lg-center">
+          <br>
+          <br>         
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>SUNRISE ADVERTISING</span>
+          </a>          
+          <div class="social-links d-flex mt-4">
+            <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
+            <a href="https://www.facebook.com/profile.php?id=100057346665448" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/sunrise_ad4450?igsh=MXBsYmtydDB6MjVwdQ%3D%3D&utm_source=qr" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+            <!-- <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a> -->
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <!-- <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div> -->
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            No. 4450 Jalan Raja Uda , 12300 Butterworth , Pinang, Malaysia<br><br>
+            <strong>Phone:</strong> 016-239 6933<br>
+            <strong>Email:</strong> sunrise4450@gmail.com<br>
+            <strong>Email:</strong> sunrise4451@gmail.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var portfolioContainer = document.querySelector('.portfolio-isotope');
+      if (portfolioContainer) {
+        var iso = new Isotope(portfolioContainer, {
+          itemSelector: '.portfolio-item',
+          layoutMode: 'masonry',
+          filter: '.filter-app' // Set the default filter here
+        });
+  
+        // bind filter button click
+        var filtersElem = document.querySelector('.portfolio-flters');
+        filtersElem.addEventListener('click', function(event) {
+          if (!matchesSelector(event.target, 'li')) {
+            return;
+          }
+          var filterValue = event.target.getAttribute('data-filter');
+          iso.arrange({ filter: filterValue });
+  
+          // remove active class from all buttons
+          filtersElem.querySelectorAll('.filter-active').forEach(function(el) {
+            el.classList.remove('filter-active');
+          });
+          // add active class to clicked button
+          event.target.classList.add('filter-active');
+        });
+      }
+    });
+
+  </script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+   <!-- Initialize Swiper -->
+   <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "flip",
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
