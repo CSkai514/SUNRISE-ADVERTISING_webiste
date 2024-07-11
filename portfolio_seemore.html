@@ -93,7 +93,11 @@
       }
       .portfolio .portfolio-flters li{
         padding-bottom: 5px;
+        display: inline-block;
       }
+      .arrow {
+        display: block !important;
+    }
     }
 
     .swiper {
@@ -118,6 +122,48 @@
       max-height: 400px;
       object-fit: cover;
     }
+    .arrow {
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+}
+
+.arrow.left-arrow {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    opacity: 0.5;
+    color: #fff;
+    background-color:#dfa44a;
+    border-radius: 25px;
+    font-size: 25px;
+
+}
+
+.arrow.right-arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0.5;
+    color: #fff;
+    background-color:#dfa44a;
+    border-radius: 25px;
+    font-size: 25px;
+    border: 1px #dfa44a solid;
+}
+.swiper-button-prev {
+    color: #dfa44a; 
+}
+.swiper-button-next {
+    color: #dfa44a; 
+}
+.swiper-pagination-bullet-active {
+     background-color: #dfa44a !important;
+}
 
   </style>
 </head>
@@ -158,8 +204,8 @@
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
 
           <div>
+            <button class="arrow left-arrow">&#10094;</button>
             <ul class="portfolio-flters">
-               
                <li data-filter=".filter-3DBoxUpNon-LightedSign">3D Box Up Non-Lighted Sign</li>              
                <li data-filter=".filter-3DLEDFrontLitSignboard">3D LED Front Lit Signboard</li>
                <li data-filter=".filter-3D_Box_Up_LED_Back_Lit">3D Box Up LED Back Lit</li>
@@ -171,6 +217,7 @@
                <li data-filter=".filter-TNB_signage_backdrop">TNB signage backdrop</li>  
                <!-- <li data-filter="*" class="filter-active"><b>All</b></li>   -->
             </ul>
+            <button class="arrow right-arrow">&#10095;</button>
             <p style="text-align: center; color: rgb(173, 173, 173); font-size: 12px;">Click the image to expand </p>
           </div>
           <div class="row gx-8 portfolio-container">
@@ -598,6 +645,27 @@
       },
     });
   </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const container = document.querySelector('.portfolio-flters');
+        const leftArrow = document.querySelector('.left-arrow');
+        const rightArrow = document.querySelector('.right-arrow');
+        
+        leftArrow.addEventListener('click', function () {
+            container.scrollBy({
+                left: -200, // Adjust scroll amount
+                behavior: 'smooth'
+            });
+        });
+
+        rightArrow.addEventListener('click', function () {
+            container.scrollBy({
+                left: 200, // Adjust scroll amount
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 </body>
 
 </html>

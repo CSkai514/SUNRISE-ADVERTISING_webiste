@@ -92,7 +92,43 @@
       .portfolio .portfolio-flters li{
         padding-bottom: 5px;
       }
+      .arrow {
+        display: block !important;
     }
+    }
+    .arrow {
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    display: none;
+}
+
+.arrow.left-arrow {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    opacity: 0.5;
+    color: #fff;
+    background-color:#dfa44a;
+    border-radius: 25px;
+    font-size: 25px;
+
+}
+
+.arrow.right-arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    opacity: 0.5;
+    color: #fff;
+    background-color:#dfa44a;
+    border-radius: 25px;
+    font-size: 25px;
+    border: 1px #dfa44a solid;
+}
   </style>
 </head>
 
@@ -409,8 +445,8 @@
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
 
           <div>
+            <button class="arrow left-arrow">&#10094;</button>
             <ul class="portfolio-flters">
-               <!-- <li data-filter="*" class="filter-active">All</li> -->
                <li data-filter=".filter-3DBoxUpNon-LightedSign">3D Box Up Non-Lighted Sign</li>              
                <li data-filter=".filter-3DLEDFrontLitSignboard">3D LED Front Lit Signboard</li>
                <li data-filter=".filter-3D_Box_Up_LED_Back_Lit">3D Box Up LED Back Lit</li>
@@ -418,9 +454,11 @@
                <li data-filter=".filter-road_sign">Road Sign</li>
                <li data-filter=".filter-ofice_signage">Office Signage</li>
                <li data-filter=".filter-glass_sticker">Glass Sticker</li>
-               <li data-filter=".filter-app" >Vehicles Advertisement</li>
-               <li data-filter=".filter-TNB_signage_backdrop">TNB signage backdrop</li>    
+               <li data-filter=".filter-app" class="filter-active">Vehicles Advertisement</li>
+               <li data-filter=".filter-TNB_signage_backdrop">TNB signage backdrop</li>  
+               <!-- <li data-filter="*" class="filter-active"><b>All</b></li>   -->
             </ul>
+            <button class="arrow right-arrow">&#10095;</button>
           </div>
           <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app" style="position: absolute; left: 0px; top: 0px;">
             <div class="portfolio-content h-100">
@@ -824,30 +862,25 @@
       });
 
     }
-    
+    document.addEventListener('DOMContentLoaded', function () {
+        const container = document.querySelector('.portfolio-flters');
+        const leftArrow = document.querySelector('.left-arrow');
+        const rightArrow = document.querySelector('.right-arrow');
+        
+        leftArrow.addEventListener('click', function () {
+            container.scrollBy({
+                left: -200, // Adjust scroll amount
+                behavior: 'smooth'
+            });
+        });
 
-//     const swiper = new Swiper('.swiper', {
-
-//   effect: 'cards',
-//   cardsEffect: {
-
-//   },
-
-
-//   pagination: {
-//     el: '.swiper-pagination',
-//   },
-
-
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-
-//   scrollbar: {
-//     el: '.swiper-scrollbar',
-//   },
-// });
+        rightArrow.addEventListener('click', function () {
+            container.scrollBy({
+                left: 200, // Adjust scroll amount
+                behavior: 'smooth'
+            });
+        });
+    });
   </script>
 </body>
 
